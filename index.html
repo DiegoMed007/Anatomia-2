@@ -109,6 +109,61 @@ body{min-height:100vh}button{font:inherit}
 #anatomiaFinal .af-confidence button{font-size:12px;padding:8px 10px}
 #anatomiaFinal .af-confidence .selected{outline:2px solid #6ea8fe}
 #anatomiaFinal .af-review-queue{border-left:4px solid #a78bfa}
+</style>
+<style id="anatomia-ui-v10-test">
+/* V10 UI TEST — compacta, acolhedora e orientada por função */
+#anatomiaFinal{--ui-blue:#6ea8fe;--ui-green:#55c98a;--ui-yellow:#e5b75a;--ui-orange:#f29b58;--ui-purple:#a78bfa;--ui-red:#ef6b73;--ui-surface:rgba(18,25,35,.72)}
+#anatomiaFinal .af-card{padding:14px 16px;border-radius:12px;background:var(--ui-surface);box-shadow:none}
+#anatomiaFinal .af-card h2,#anatomiaFinal .af-card h3{margin-bottom:8px}
+#anatomiaFinal .af-card>p{margin:6px 0;line-height:1.5}
+#anatomiaFinal .af-action-row{align-items:center;gap:7px;margin-top:10px;padding:7px 9px;border:1px solid rgba(255,255,255,.07);border-radius:10px;background:rgba(255,255,255,.025)}
+#anatomiaFinal .af-action-row label{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);font-weight:700}
+#anatomiaFinal .af-action-row input,#anatomiaFinal .af-action-row select{margin-top:0;width:auto;min-height:38px;padding:8px 10px;border-radius:9px}
+#anatomiaFinal button{transition:transform .12s ease,border-color .12s ease,background .12s ease,filter .12s ease}
+#anatomiaFinal button:hover{transform:translateY(-1px);filter:brightness(1.06)}
+#anatomiaFinal button:active{transform:translateY(0)}
+#anatomiaFinal button:focus-visible,#anatomiaFinal input:focus-visible,#anatomiaFinal select:focus-visible{outline:2px solid var(--ui-blue);outline-offset:2px}
+#anatomiaFinal .af-tabs{gap:6px;margin:8px 0 12px;align-items:center}
+#anatomiaFinal .af-tabs button{padding:9px 11px;border-radius:9px}
+#anatomiaFinal .af-tabs button.active{background:rgba(110,168,254,.13)}
+#anatomiaFinal .af-tools{gap:7px;margin-bottom:10px}
+#anatomiaFinal .af-pomo{padding:6px 8px;border-radius:10px}
+#anatomiaFinal .af-pomo button{padding:7px 9px}
+#anatomiaFinal .af-pomo-time{font-size:20px;min-width:62px}
+#anatomiaFinal .af-dashboard-grid{gap:10px;margin:10px 0}
+#anatomiaFinal .af-kpi{min-height:94px;padding:13px 14px;border-radius:12px;position:relative;overflow:hidden}
+#anatomiaFinal .af-kpi strong{font-size:23px;margin-top:3px}
+#anatomiaFinal .af-kpi:nth-child(1){border-left:3px solid var(--ui-blue)}
+#anatomiaFinal .af-kpi:nth-child(2){border-left:3px solid var(--ui-green)}
+#anatomiaFinal .af-kpi:nth-child(3){border-left:3px solid var(--ui-orange)}
+#anatomiaFinal .af-kpi:nth-child(4){border-left:3px solid var(--ui-purple)}
+#anatomiaFinal .af-smart{border-left:3px solid var(--ui-purple);background:rgba(167,139,250,.055)}
+#anatomiaFinal .af-review-queue{border-left:3px solid var(--ui-yellow);background:rgba(229,183,90,.045)}
+#anatomiaFinal .af-reco{border-left:3px solid var(--ui-orange);background:rgba(242,155,88,.045)}
+#anatomiaFinal .af-note{border-left-width:3px;border-radius:0 9px 9px 0}
+#anatomiaFinal .af-chip{padding:4px 8px;background:rgba(255,255,255,.025)}
+#anatomiaFinal .af-exam-choice{border-radius:11px;min-height:76px;text-align:left}
+#anatomiaFinal .af-exam-choice:nth-child(1).active{border-color:var(--ui-blue)}
+#anatomiaFinal .af-exam-choice:nth-child(2).active{border-color:var(--ui-orange)}
+#anatomiaFinal .af-exam-choice:nth-child(3).active{border-color:var(--ui-red)}
+#anatomiaFinal .af-exam-choice:nth-child(4).active{border-color:var(--ui-purple)}
+#anatomiaFinal .af-exam-mod{padding:7px 9px;border-radius:8px}
+#anatomiaFinal .af-form-grid{gap:8px}
+#anatomiaFinal .af-form-grid input,#anatomiaFinal .af-form-grid select{min-height:38px}
+#anatomiaFinal .af-agenda-list{gap:6px}
+#anatomiaFinal .af-agenda-item{padding:8px 9px;border:1px solid rgba(255,255,255,.06);border-radius:9px;background:rgba(255,255,255,.018)}
+#anatomiaFinal .af-day{min-height:76px;padding:6px;border-radius:8px}
+#anatomiaFinal .af-event{margin-top:4px}
+#anatomiaFinal .af-sidebar{padding:10px;border-radius:12px}
+#anatomiaFinal .af-sidebar-title{margin-bottom:8px}
+#anatomiaFinal .af-mods{gap:5px}
+#anatomiaFinal .af-mods button{padding:8px 10px;border-radius:8px}
+#anatomiaFinal .af-question-shell{padding:15px 17px}
+#anatomiaFinal .af-question-shell .af-opt{width:100%;padding:10px 12px;border-radius:9px;margin:6px 0}
+#anatomiaFinal .af-confidence{gap:6px}
+#anatomiaFinal .af-confidence button{padding:7px 9px;border-radius:8px}
+@media(max-width:900px){#anatomiaFinal .af-dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){#anatomiaFinal .af-dashboard-grid{grid-template-columns:1fr}#anatomiaFinal .af-action-row{align-items:stretch}#anatomiaFinal .af-action-row label{flex:1 1 150px}#anatomiaFinal .af-action-row input,#anatomiaFinal .af-action-row select{width:100%}}
 </style></head><body><div id="anatomiaFinal" style="display:block"><div class="af-head"><div><div class="af-title">🧠 Anatomia II — Preparação P1 • V5</div><div class="af-sub">13 módulos • conteúdo-chave • mapa mental • flashcards • 50 questões A–E por módulo</div></div><div class="af-stat" id="afGlobal"></div></div><div class="af-tools"><div class="af-pomo" id="afPomo"><span class="af-pomo-phase" id="afPomoPhase">Foco</span><span class="af-pomo-time" id="afPomoTime">25:00</span><button type="button" id="afPomoStart">▶ Iniciar</button><button type="button" id="afPomoReset">↺</button><select id="afPomoPreset" title="Duração"><option value="25,5">25/5</option><option value="50,10">50/10</option><option value="45,10">45/10</option><option value="custom">Personalizado</option></select></div><button type="button" id="afAgendaQuick">📅 Agenda</button></div><div class="af-layout"><aside class="af-sidebar"><div class="af-sidebar-title">MÓDULOS</div><div class="af-mods" id="afMods"></div></aside><section class="af-main"><div class="af-tabs"><button data-af-tab="dashboard">🏠 Dashboard</button><button data-af-tab="conteudo">📖 Conteúdo</button><button data-af-tab="mapa">🗺️ Mapa mental</button><button data-af-tab="flash">🃏 Flashcards</button><button data-af-tab="questoes">📝 50 questões</button><button data-af-tab="prova">🎓 Modo prova</button><button data-af-tab="agenda">📅 Agenda</button></div><div id="afBody"></div></div><script>
 
 (function(){
